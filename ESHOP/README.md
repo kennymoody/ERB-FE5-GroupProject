@@ -10,17 +10,17 @@ Sandy
 
 # TODO List
 
-1. Revamp CSS , remove all CSS comment and add some title
+~1. Revamp CSS , remove all CSS comment and add some title~
 
 2. check Media Query
 
-<!-- 3. Change to REACT if time is enough - Cancelled -->
+~3. Change to REACT if time is enough - Cancelled~
 
-4. index > card hover action
+~4. index > card hover action~
 
-<!-- 5. fix nav bar > should bold current page -->
+~5. fix nav bar > should make current pag text bold~
 
 6. resize some jpg to speed up the loading time
 
-7. favicon
+~7. favicon~
 

@@ -40,6 +40,15 @@ body {
   }
 }
 
+.nav-link {
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--color-white) !important;
+  cursor: pointer;
+}
+
 .badge {
   font-family: var(--font-secondary);
 }
@@ -80,11 +89,11 @@ body {
 }
 
 .hover-link {
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .hover-link:hover {
-  color: #ffffff !important;
+  color: var(--color-white) !important;
   cursor: pointer;
 }
 
@@ -93,7 +102,7 @@ body {
 }
 
 .custom-product-card {
-  background-color: #fff;
+  background-color: var(--color-white);
   box-shadow: 10px 10px 15px 1.5px rgba(159, 120, 196, 0.4); /* 使用 RGBA 控制透明度更自然 */
   transition:
     transform 0.3s ease,
@@ -145,18 +154,21 @@ body {
 }
 
 /* for product detail page image gallery */
+
 .carousel-indicators li {
   width: auto !important;
   height: auto !important;
 }
 
 /* for checkout page */
+
 .bg_checkout_1 {
   background-color: #8ec5fc;
   background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
 }
 
 /* for product layout design */
+
 .single_product {
   background-color: rgb(241, 240, 240);
 }
@@ -212,6 +224,7 @@ body {
 }
 
 /* for footer links  */
+
 .footer_links ul li {
   list-style: none;
   margin-bottom: 1rem;
@@ -227,6 +240,7 @@ body {
 }
 
 /* for scroll to top button */
+
 #button {
   position: fixed;
   right: 5%;
@@ -246,8 +260,11 @@ body {
 .mb-small-5 {
   margin-bottom: 0rem !important;
 }
+
+
 /* for mobile responsive setting */
-@media (max-width: 991.98px) {
+
+@media (max-width: 992px) {
   .nav-item {
     padding: 8px 0;
   }
@@ -269,7 +286,6 @@ body {
     font-size: 0.75rem;
   }
 }
-
 
 @media (max-width: 767px) {
   .mt-small-2 {
@@ -293,7 +309,6 @@ body {
     padding-right: 8px;
   }
 
-  /* 縮小手機版標題與價格字體，避免換行太亂 */
   .single_product h5 {
     font-size: 0.85rem;
   }
@@ -301,23 +316,21 @@ body {
     font-size: 0.9rem;
   }
 
-  /* 篩選器在手機版增加間距 */
   .filter_sidebar {
     margin-bottom: 30px;
   }
 
-      .custom-about-container {
-        padding: 2rem 1.5rem !important;
-        margin: 0 10px 30px 10px; /* 手機版增加左右外距 */
-    }
-        .img-zoom {
-        height: 300px; /* 手機版縮小圖片高度 */
-    }
+  .custom-about-container {
+    padding: 2rem 1.5rem !important;
+    margin: 0 10px 30px 10px;
+  }
+  .img-zoom {
+    height: 300px;
+  }
 }
 
 /* category page */
 
-/* 篩選器連結樣式 */
 .filter-link {
   color: #555;
   text-decoration: none !important;
@@ -327,22 +340,21 @@ body {
 
 .filter-link:hover,
 .filter-link.active {
-  color: #9f78c4 !important; /* 品牌紫色 */
+  color: #9f78c4 !important;
   font-weight: 600;
-  transform: translateX(5px); /* 移入時稍微右移 */
+  transform: translateX(5px);
 }
 
-/* 2. 價格滑桿 (Price Range) 自定義顏色 */
 .custom-range::-webkit-slider-thumb {
-  background: #9f78c4; /* 讓滑鈕變紫色 */
+  background: #9f78c4;
 }
 .custom-range::-moz-range-thumb {
   background: #9f78c4;
 }
 
 .bg-white-transparent {
-  background: rgba(255, 255, 255, 0.25); /* 輕微透明白 */
-  backdrop-filter: blur(8px); /* 毛玻璃效果 */
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(8px);
   border: 1px solid rgba(255, 255, 255, 0.3);
   color: #333;
 }
@@ -358,264 +370,235 @@ body {
   color: #9f78c4;
 }
 
-
-
-/* 1. 分類標題樣式 */
 .category-title {
-    letter-spacing: 2px;
-    color: #333;
+  letter-spacing: 2px;
+  color: #333;
 }
 
 .title-underline {
-    width: 60px;
-    height: 4px;
-    background: #7f50a8; /* 使用你指定的紫色 */
-    border-radius: 2px;
+  width: 60px;
+  height: 4px;
+  background: #7f50a8;
+  border-radius: 2px;
 }
 
-/* 2. 分類卡片樣式 (取代原本的 Inline Box-shadow) */
 .custom-category-card {
-    background-color: #fff;
-    box-shadow: 10px 10px 15px 1.5px rgba(127, 80, 168, 0.3); /* 使用你的紫色 #7f50a8 */
-    transition: all 0.4s ease;
-    border: none;
-    height: 100%;
+  background-color: var(--color-white);
+  box-shadow: 10px 10px 15px 1.5px rgba(127, 80, 168, 0.3);
+  transition: all 0.4s ease;
+  border: none;
+  height: 100%;
 }
 
 .custom-category-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 15px 20px 30px rgba(127, 80, 168, 0.5) !important;
+  transform: translateY(-10px);
+  box-shadow: 15px 20px 30px rgba(127, 80, 168, 0.5) !important;
 }
 
-/* 3. 圖片放大動畫 */
 .img-zoom {
-    transition: transform 0.6s ease;
-    height: 350px; /* 建議固定高度以保持卡片對齊 */
-    object-fit: cover;
+  transition: transform 0.6s ease;
+  height: 350px;
+  object-fit: cover;
 }
 
 .custom-category-card:hover .img-zoom {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 /* about page */
 
-/* 1. 外層容器：整合你原本的 #b475ee 紫色陰影 */
 .custom-about-container {
-    background: rgba(255, 255, 255, 0.7); /* 輕微透明背景，讓底色漸層透出來 */
-    backdrop-filter: blur(10px);         /* 加入毛玻璃效果提升質感 */
-    box-shadow: 0px 0px 20px 2px rgba(180, 117, 238, 0.3) !important;
-    border: 1px solid rgba(180, 117, 238, 0.2);
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 0px 20px 2px rgba(180, 117, 238, 0.3) !important;
+  border: 1px solid rgba(180, 117, 238, 0.2);
 }
 
-/* 2. 標題與裝飾線 */
 .about-title {
-    letter-spacing: 3px;
-    color: #333;
+  letter-spacing: 3px;
+  color: #333;
 }
 
-
-/* 3. 圖片效果 */
 .about-img-frame {
-    transition: transform 0.4s ease;
+  transition: transform 0.4s ease;
 }
 .about-img-frame:hover {
-    transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 /* offer page */
 
-/* 1. 標題與字距 */
 .offer-title {
-    letter-spacing: 4px;
-    color: #333;
-    font-weight: 800 !important;
+  letter-spacing: 4px;
+  color: #333;
+  font-weight: 800 !important;
 }
 
-/* 2. 沿用 About Us 的毛玻璃效果與紫色陰影 */
 .bg-white-glass {
-    background: rgba(255, 255, 255, 0.7);
-    backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .shadow-purple {
-    box-shadow: 15px 15px 35px rgba(159, 120, 196, 0.3) !important;
+  box-shadow: 15px 15px 35px rgba(159, 120, 196, 0.3) !important;
 }
 
-/* 3. 優惠項目樣式 (增加閱讀性) */
 .offer-item {
-    padding: 15px;
-    border-radius: 12px;
-    background: rgba(255, 255, 255, 0.5); /* 輕微背景區分 */
-    transition: all 0.3s ease;
+  padding: 15px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.5);
+  transition: all 0.3s ease;
 }
 
 .offer-item:hover {
-    transform: translateX(10px); /* 懸停時向右滑動 */
-    background: #fff;
+  transform: translateX(10px);
+  background: var(--color-white);
 }
 
 .offer-icon {
-    color: #7f50a8; /* 使用你的品牌紫色 */
-    min-width: 50px;
+  color: #7f50a8;
+  min-width: 50px;
 }
 
-/* 4. 手機版優化 */
-@media (max-width: 991.98px) {
-    .offer-title {
-        font-size: 2rem;
-        letter-spacing: 2px;
-    }
-    .offer-img-wrapper {
-        max-height: 250px;
-    }
+@media (max-width: 992px) {
+  .offer-title {
+    font-size: 2rem;
+    letter-spacing: 2px;
+  }
+  .offer-img-wrapper {
+    max-height: 250px;
+  }
 }
-
 
 /* Store Address Page */
-/* 1. 標題與字距 */
+
 .address-main-title {
-    letter-spacing: 4px;
-    color: #333;
-    font-weight: 800 !important;
+  letter-spacing: 4px;
+  color: #333;
+  font-weight: 800 !important;
 }
 
 .shadow-purple {
-    box-shadow: 15px 15px 35px rgba(159, 120, 196, 0.25) !important;
+  box-shadow: 15px 15px 35px rgba(159, 120, 196, 0.25) !important;
 }
 
-/* 3. 地圖區域互動感 */
 .map-wrapper {
-    transition: transform 0.4s ease;
-    border: 4px solid #fff; /* 地圖加個白邊框更有質感 */
+  transition: transform 0.4s ease;
+  border: 4px solid var(--color-white);
 }
 
 .map-wrapper:hover {
-    transform: scale(1.02);
+  transform: scale(1.02);
 }
 
-/* 4. 手機版優化 (Mobile) */
-@media (max-width: 767.98px) {
-    .address-main-title {
-        font-size: 2.2rem;
-        letter-spacing: 2px;
-    }
-    .bg-white-glass {
-        padding: 2rem !important;
-    }
+@media (max-width: 767px) {
+  .address-main-title {
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+  }
+  .bg-white-glass {
+    padding: 2rem !important;
+  }
 }
 
-/* 1. 響應式地圖容器 (固定比例) */
 .responsive-map {
-    position: relative;
-    padding-bottom: 75%; /* 這代表 4:3 的比例 */
-    height: 0;
-    overflow: hidden;
-    border: 4px solid #fff; /* 延用你的白色質感邊框 */
+  position: relative;
+  padding-bottom: 75%;
+  height: 0;
+  overflow: hidden;
+  border: 4px solid var(--color-white);
 }
 
 .responsive-map iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100% !important;
-    height: 100% !important;
-    border: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  border: 0;
 }
 
-/* 2. 電腦版稍微調整比例 (可選) */
 @media (min-width: 992px) {
-    .responsive-map {
-        padding-bottom: 65%; /* 電腦版可以稍微扁一點點 */
-    }
+  .responsive-map {
+    padding-bottom: 65%;
+  }
 }
 
 /* FAQ Page */
 
-/* 1. 標題與裝飾 */
 .faq-main-title {
-    letter-spacing: 5px;
-    color: #333;
-    font-weight: 800 !important;
+  letter-spacing: 5px;
+  color: #333;
+  font-weight: 800 !important;
 }
 
 .shadow-purple {
-    box-shadow: 15px 15px 35px rgba(159, 120, 196, 0.3) !important;
+  box-shadow: 15px 15px 35px rgba(159, 120, 196, 0.3) !important;
 }
 
-/* 3. 圖片框線美化 */
 .faq-img-wrapper {
-    border: 5px solid #fff;
-    transition: transform 0.4s ease;
+  border: 5px solid var(--color-white);
+  transition: transform 0.4s ease;
 }
 .faq-img-wrapper:hover {
-    transform: scale(1.02);
+  transform: scale(1.02);
 }
 
-/* 4. 問題項目的間距 */
 .faq-item h5 {
-    font-size: 1.1rem;
-    transition: color 0.3s ease;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
 }
 .faq-item:hover h5 {
-    color: #7f50a8 !important; /* 懸停時變品牌紫色 */
+  color: #7f50a8 !important;
 }
 
-/* --- 手機版優化 --- */
-@media (max-width: 991.98px) {
-    .faq-main-title {
-        font-size: 2.5rem;
-    }
+@media (max-width: 992px) {
+  .faq-main-title {
+    font-size: 2.5rem;
+  }
 }
-
 
 /* T&C Page */
 
-/* 標題與裝飾 */
 .terms-main-title {
-    letter-spacing: 4px;
-    color: #333;
-    font-weight: 800 !important;
+  letter-spacing: 4px;
+  color: #333;
+  font-weight: 800 !important;
 }
 
-
-/* 圖片框美化 */
 .terms-img-wrapper {
-    border: 5px solid #fff;
-    transition: transform 0.4s ease;
+  border: 5px solid var(--color-white);
+  transition: transform 0.4s ease;
 }
 .terms-img-wrapper:hover {
-    transform: scale(1.02);
+  transform: scale(1.02);
 }
 
-/* 手機版優化 */
-@media (max-width: 991.98px) {
-    .terms-main-title {
-        font-size: 2.2rem;
-    }
+@media (max-width: 992px) {
+  .terms-main-title {
+    font-size: 2.2rem;
+  }
 }
 
 /* Policy Page */
 
 .policy-main-title {
-    letter-spacing: 4px;
-    color: #333;
-    font-weight: 800 !important;
+  letter-spacing: 4px;
+  color: #333;
+  font-weight: 800 !important;
 }
-/* 3. 圖片框美化 */
 .policy-img-wrapper {
-    border: 5px solid #fff;
-    transition: transform 0.4s ease;
+  border: 5px solid var(--color-white);
+  transition: transform 0.4s ease;
 }
 .policy-img-wrapper:hover {
-    transform: scale(1.02);
+  transform: scale(1.02);
 }
 
-/* 4. 手機版優化 (Mobile) */
-@media (max-width: 991.98px) {
-    .policy-main-title {
-        font-size: 2.2rem;
-        letter-spacing: 2px;
-    }
+@media (max-width: 992px) {
+  .policy-main-title {
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+  }
 }
