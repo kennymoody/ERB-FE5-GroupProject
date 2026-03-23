@@ -1,308 +1,521 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
     <!-- style.css  -->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css" />
 
-        <!-- script.js -->
+    <!-- script.js -->
     <link rel="preload" href="navbar.html" as="fetch" crossorigin />
     <link rel="preload" href="footer.html" as="fetch" crossorigin />
     <script src="./script/script.js"></script>
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
 
     <!-- fontawesome cdn link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
-        integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
-        crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
+      crossorigin="anonymous"
+    />
 
     <title>E-Shop</title>
-</head>
+  </head>
 
-<body id="top" style="background-color: #8EC5FC;
-background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 43%);">
+  <body
+    id="top"
+    style="
+      background-color: #8ec5fc;
+      background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 43%);
+    "
+  >
     <!-- ==============header menu section starts here============== -->
-      <div id="navbar-placeholder"></div>
+    <div id="navbar-placeholder"></div>
     <!-- ==============header menu section ends here============== -->
 
     <!-- ==============cart starts here============== -->
-    <section class="cart py-5 my-5" id="cart" >
-        <div class="container ">
-                         <div class="section_title text-center mb-5">
-                <h1 class="text-uppercase text-decoration-none">Cart</h1>
-                      <div class="title-underline mx-auto"></div>
-            </div>
-            <div class="row bg_cart_1 rounded" style="box-shadow: 10px 10px 15px 0.5px #bf94e7; border-width:0.1rem; background-color: #387db6;
-            background-image: linear-gradient(65deg, #a9cee7 20rem, #dfbcf0 45rem);">
-                <!--Grid column-->
-                <div class="col-md-8 border-right">
-                    <!-- Card -->
-                    <div class="mb-3">
-                        <div class="pt-4">
-                            <h5 class="mb-4">Cart (<span>5</span> items)</h5>
-                            <div class="row mb-4">
-                                <div class="col-md-5 col-lg-3 col-xl-3">
-                                    <div class="rounded mb-3 mb-md-0">
-                                        <img class="img-fluid w-100 rounded" src="./images/new5.jpeg" alt="Sample">
-                                    </div>
-                                </div>
-                                <div class="col-md-7 col-lg-9 col-xl-9">
-                                    <div>
-                                        <div class="d-flex justify-content-between">
-                                            <div>
-                                                <h5>Sherwani</h5>
-                                                <p class="mb-3 text-muted text-uppercase small">Style - ethenic</p>
-                                                <p class="mb-2 text-muted text-uppercase small">Color: Maroon-gold</p>
-                                                <p class="mb-3 text-muted text-uppercase small">Size: L</p>
-                                            </div>
-                                            <div>
-                                                <div class="mb-0 w-100">
-                                                    <button
-                                                        onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
-                                                        class="btn btn-sm btn-outline-primary">
-                                                        <i class="fas fa-minus"></i>
-                                                    </button>
-                                                    <input class="quantity text-center" min="0" max="10" name="quantity"
-                                                        value="1" type="number">
-                                                    <button
-                                                        onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                                                        class="btn btn-sm btn-outline-primary">
-                                                        <i class="fas fa-plus"></i>
-                                                    </button>
-                                                </div>
-                                                <small class="form-text text-muted text-center">
-                                                    (Note, 1 piece)
-                                                </small>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <div>
-                                                <a href="javascript:;" type="button"
-                                                    class="small text-uppercase mr-3"><i
-                                                        class="fas fa-trash-alt mr-1"></i> Remove item </a>
-                                            </div>
-                                            <p class="mb-0"><span><strong id="summary">$2499.00</strong></span></p
-                                                class="mb-0">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <hr class="mb-4">
-                            <div class="row mb-4">
-                                <div class="col-md-5 col-lg-3 col-xl-3">
-                                    <div class="rounded mb-3 mb-md-0">
-                                        <img class="img-fluid w-100 rounded" src="./images/new6.jpeg" alt="Sample">
-                                    </div>
-                                </div>
-                                <div class="col-md-7 col-lg-9 col-xl-9">
-                                    <div>
-                                        <div class="d-flex justify-content-between">
-                                            <div>
-                                                <h5>Partywear Women Shrug</h5>
-                                                <p class="mb-3 text-muted text-uppercase small">Style: semi-formal </p>
-                                                <p class="mb-2 text-muted text-uppercase small">Color: blue</p>
-                                                <p class="mb-3 text-muted text-uppercase small">Size: M</p>
-                                            </div>
-                                            <div>
-                                                <div class="mb-0 w-100">
-                                                    <button
-                                                        onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
-                                                        class="btn btn-sm btn-outline-primary">
-                                                        <i class="fas fa-minus"></i>
-                                                    </button>
-                                                    <input class="quantity text-center" min="0" max="10" name="quantity"
-                                                        value="1" type="number">
-                                                    <button
-                                                        onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                                                        class="btn btn-sm btn-outline-primary">
-                                                        <i class="fas fa-plus"></i>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <div>
-                                                <a href="javascript:;" type="button"
-                                                    class="card-link-secondary small text-uppercase mr-3">
-                                                    <i class="fas fa-trash-alt mr-1"></i> Remove item
-                                                </a>
-                                            </div>
-                                            <p class="mb-0"><span><strong>$399.00</strong></span></p class="mb-0">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <hr class="mb-4">
-                            <div class="row mb-4">
-                                <div class="col-md-5 col-lg-3 col-xl-3">
-                                    <div class="rounded mb-3 mb-md-0">
-                                        <img class="img-fluid w-100 rounded" src="./images/new26.png" alt="Sample">
-                                    </div>
-                                </div>
-                                <div class="col-md-7 col-lg-9 col-xl-9">
-                                    <div>
-                                        <div class="d-flex justify-content-between">
-                                            <div>
-                                                <h5>Women Crop Top</h5>
-                                                <p class="mb-3 text-muted text-uppercase small">Style: casual</p>
-                                                <p class="mb-2 text-muted text-uppercase small">Color: green</p>
-                                                <p class="mb-3 text-muted text-uppercase small">Size: M</p>
-                                            </div>
-                                            <div>
-                                                <div class="mb-0 w-100">
-                                                    <button
-                                                        onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
-                                                        class="btn btn-sm btn-outline-primary">
-                                                        <i class="fas fa-minus"></i>
-                                                    </button>
-                                                    <input class="quantity text-center" min="0" max="10" name="quantity"
-                                                        value="2" type="number">
-                                                    <button
-                                                        onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                                                        class="btn btn-sm btn-outline-primary">
-                                                        <i class="fas fa-plus"></i>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <div>
-                                                <a href="javascript:;" type="button"
-                                                    class="card-link-secondary small text-uppercase mr-3">
-                                                    <i class="fas fa-trash-alt mr-1"></i> Remove item
-                                                </a>
-                                            </div>
-                                            <p class="mb-0"><span><strong>$399.00</strong></span></p class="mb-0">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <hr class="mb-4">
-                            <div class="row mb-4">
-                                <div class="col-md-5 col-lg-3 col-xl-3">
-                                    <div class="rounded mb-3 mb-md-0">
-                                        <img class="img-fluid w-100 rounded" src="./images/new27.jpg" alt="Sample">
-                                    </div>
-                                </div>
-                                <div class="col-md-7 col-lg-9 col-xl-9">
-                                    <div>
-                                        <div class="d-flex justify-content-between">
-                                            <div>Men's Casual Shirt</h5>
-                                                <p class="mb-3 text-muted text-uppercase small">Style: Casual</p>
-                                                <p class="mb-2 text-muted text-uppercase small">Color: grey</p>
-                                                <p class="mb-3 text-muted text-uppercase small">Size: M</p>
-                                            </div>
-                                            <div>
-                                                <div class="mb-0 w-100">
-                                                    <button
-                                                        onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
-                                                        class="btn btn-sm btn-outline-primary">
-                                                        <i class="fas fa-minus"></i>
-                                                    </button>
-                                                    <input class="quantity text-center" min="0" max="10" name="quantity"
-                                                        value="1" type="number">
-                                                    <button
-                                                        onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                                                        class="btn btn-sm btn-outline-primary">
-                                                        <i class="fas fa-plus"></i>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <div>
-                                                <a href="javascript:;" type="button"
-                                                    class="card-link-secondary small text-uppercase mr-3">
-                                                    <i class="fas fa-trash-alt mr-1"></i> Remove item
-                                                </a>
-                                            </div>
-                                            <p class="mb-0"><span><strong>$499.00</strong></span></p class="mb-0">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--Grid column-->
-
-                <!--Grid column-->
-                <div class="col-md-4  rounded">
-                    <!-- Card -->
-                    <div class="mb-3">
-                        <div class="pt-4">
-                            <h5 class="mb-3">Order summary</h5>
-                            <ul class="list-group list-group-flush">
-                                <li
-                                    class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-2">
-                                    <span>Sherwani</span>
-                                    <span>x1</span>
-                                    <span>$2499.00</span>
-                                </li>
-                                <li
-                                    class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-2">
-                                    <span>Partywear Women Shrug</span>
-                                    <span>x1</span>
-                                    <span>$399.00</span>
-                                </li>
-                                <li
-                                    class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-2">
-                                    <span>Women Crop Top</span>
-                                    <span>x2</span>
-                                    <span>$798.00</span>
-                                </li>
-                                <li
-                                    class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-2">
-                                    <span>Men's Casual Shirt</span>
-                                    <span>x1</span>
-                                    <span>$499.00</span>
-                                </li>
-                                <li
-                                    class="list-group-item d-flex justify-content-between align-items-center border-top px-0 mb-3">
-                                    <div>
-                                        <strong>Total amount</strong>
-                                        <strong>
-                                            <p class="mb-0">(including VAT)</p>
-                                        </strong>
-                                    </div>
-                                    <span><strong>$4195.00</strong></span>
-                                </li>
-                            </ul>
-                            <a href="checkout.html" class="btn btn-primary btn-block">Go to Checkout</a>
-                        </div>
-                    </div>
-                    <!-- Card -->
-                </div>
-                <!--Grid column-->
-            </div>
+    <section class="cart py-5 my-5" id="cart">
+      <div class="container">
+        <div class="section_title text-center mb-5">
+          <h1 class="text-uppercase text-decoration-none">Cart</h1>
+          <div class="title-underline mx-auto"></div>
         </div>
+        <div
+          class="row bg_cart_1 rounded"
+          style="
+            box-shadow: 10px 10px 15px 0.5px #bf94e7;
+            border-width: 0.1rem;
+            background-color: #387db6;
+            background-image: linear-gradient(
+              65deg,
+              #a9cee7 20rem,
+              #dfbcf0 45rem
+            );
+          "
+        >
+          <!--Grid column-->
+          <div class="col-md-8 border-right">
+            <!-- Card -->
+            <div class="mb-3">
+              <div class="pt-4">
+                <h5 class="mb-4">
+                  Cart (<span id="cart_count">0</span> items)
+                </h5>
+                <div class="row mb-4 cart_item" id="item-1">
+                  <div class="col-md-5 col-lg-3 col-xl-3">
+                    <div class="rounded mb-3 mb-md-0">
+                      <img
+                        class="img-fluid w-100 rounded"
+                        src="./images/new5.jpeg"
+                        alt="Sample"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-7 col-lg-9 col-xl-9">
+                    <div>
+                      <div class="d-flex justify-content-between">
+                        <div>
+                          <h5 class="item-name">Sherwani</h5>
+                          <p class="mb-3 text-muted text-uppercase small">
+                            Style - ethenic
+                          </p>
+                          <p class="mb-2 text-muted text-uppercase small">
+                            Color: Maroon-gold
+                          </p>
+                          <p class="mb-3 text-muted text-uppercase small">
+                            Size: L
+                          </p>
+                        </div>
+                        <div>
+                          <div class="mb-0 w-100">
+                            <button
+                              onclick="
+                                this.parentNode
+                                  .querySelector('input[type=number]')
+                                  .stepDown();
+                                updateTotal();
+                              "
+                              class="btn btn-sm btn-outline-primary"
+                            >
+                              <i class="fas fa-minus"></i>
+                            </button>
+                            <input
+                              class="quantity text-center item-quantity"
+                              min="0"
+                              max="10"
+                              name="quantity"
+                              value="1"
+                              type="number"
+                            />
+                            <button
+                              onclick="
+                                this.parentNode
+                                  .querySelector('input[type=number]')
+                                  .stepUp();
+                                updateTotal();
+                              "
+                              class="btn btn-sm btn-outline-primary"
+                            >
+                              <i class="fas fa-plus"></i>
+                            </button>
+                          </div>
+                          <small class="form-text text-muted text-center">
+                            (Note, 1 piece)
+                          </small>
+                        </div>
+                      </div>
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <div>
+                          <a
+                            onclick="removeItem('item-1')"
+                            type="button"
+                            class="small text-uppercase mr-3"
+                            ><i class="fas fa-trash-alt mr-1"></i> Remove item
+                          </a>
+                        </div>
+                        <p class="mb-0">
+                          <span
+                            ><input
+                              type="hidden"
+                              class="orivalue"
+                              value="2499"
+                            /><strong
+                              >$<span class="value">2499</span></strong
+                            ></span
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr class="mb-4" />
+                <div class="row mb-4 cart_item" id="item-2">
+                  <div class="col-md-5 col-lg-3 col-xl-3">
+                    <div class="rounded mb-3 mb-md-0">
+                      <img
+                        class="img-fluid w-100 rounded"
+                        src="./images/new6.jpeg"
+                        alt="Sample"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-7 col-lg-9 col-xl-9">
+                    <div>
+                      <div class="d-flex justify-content-between">
+                        <div>
+                          <h5 class="item-name">Partywear Women Shrug</h5>
+                          <p class="mb-3 text-muted text-uppercase small">
+                            Style: semi-formal
+                          </p>
+                          <p class="mb-2 text-muted text-uppercase small">
+                            Color: blue
+                          </p>
+                          <p class="mb-3 text-muted text-uppercase small">
+                            Size: M
+                          </p>
+                        </div>
+                        <div>
+                          <div class="mb-0 w-100">
+                            <button
+                              onclick="
+                                this.parentNode
+                                  .querySelector('input[type=number]')
+                                  .stepDown();
+                                updateTotal();
+                              "
+                              class="btn btn-sm btn-outline-primary"
+                            >
+                              <i class="fas fa-minus"></i>
+                            </button>
+                            <input
+                              class="quantity text-center item-quantity"
+                              min="0"
+                              max="10"
+                              name="quantity"
+                              value="1"
+                              type="number"
+                            />
+                            <button
+                              onclick="
+                                this.parentNode
+                                  .querySelector('input[type=number]')
+                                  .stepUp();
+                                updateTotal();
+                              "
+                              class="btn btn-sm btn-outline-primary"
+                            >
+                              <i class="fas fa-plus"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <div>
+                          <a
+                            onclick="removeItem('item-2')"
+                            type="button"
+                            class="card-link-secondary small text-uppercase mr-3"
+                          >
+                            <i class="fas fa-trash-alt mr-1"></i> Remove item
+                          </a>
+                        </div>
+                        <p class="mb-0">
+                          <span
+                            ><input
+                              type="hidden"
+                              class="orivalue"
+                              value="399"
+                            /><strong
+                              >$ <span class="value">399</span></strong
+                            ></span
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr class="mb-4" />
+                <div class="row mb-4 cart_item" id="item-3">
+                  <div class="col-md-5 col-lg-3 col-xl-3">
+                    <div class="rounded mb-3 mb-md-0">
+                      <img
+                        class="img-fluid w-100 rounded"
+                        src="./images/new26.png"
+                        alt="Sample"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-7 col-lg-9 col-xl-9">
+                    <div>
+                      <div class="d-flex justify-content-between">
+                        <div>
+                          <h5 class="item-name">Women Crop Top</h5>
+                          <p class="mb-3 text-muted text-uppercase small">
+                            Style: casual
+                          </p>
+                          <p class="mb-2 text-muted text-uppercase small">
+                            Color: green
+                          </p>
+                          <p class="mb-3 text-muted text-uppercase small">
+                            Size: M
+                          </p>
+                        </div>
+                        <div>
+                          <div class="mb-0 w-100">
+                            <button
+                              onclick="
+                                this.parentNode
+                                  .querySelector('input[type=number]')
+                                  .stepDown();
+                                updateTotal();
+                              "
+                              class="btn btn-sm btn-outline-primary"
+                            >
+                              <i class="fas fa-minus"></i>
+                            </button>
+                            <input
+                              class="quantity text-center item-quantity"
+                              min="0"
+                              max="10"
+                              name="quantity"
+                              value="2"
+                              type="number"
+                            />
+                            <button
+                              onclick="
+                                this.parentNode
+                                  .querySelector('input[type=number]')
+                                  .stepUp();
+                                updateTotal();
+                              "
+                              class="btn btn-sm btn-outline-primary"
+                            >
+                              <i class="fas fa-plus"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <div>
+                          <a
+                            onclick="removeItem('item-3')"
+                            type="button"
+                            class="card-link-secondary small text-uppercase mr-3"
+                          >
+                            <i class="fas fa-trash-alt mr-1"></i> Remove item
+                          </a>
+                        </div>
+                        <p class="mb-0">
+                          <span
+                            ><input
+                              type="hidden"
+                              class="orivalue"
+                              value="399"
+                            /><strong
+                              >$<span class="value">399</span></strong
+                            ></span
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr class="mb-4" />
+                <div class="row mb-4 cart_item" id="item-4">
+                  <div class="col-md-5 col-lg-3 col-xl-3">
+                    <div class="rounded mb-3 mb-md-0">
+                      <img
+                        class="img-fluid w-100 rounded"
+                        src="./images/new27.jpg"
+                        alt="Sample"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-7 col-lg-9 col-xl-9">
+                    <div>
+                      <div class="d-flex justify-content-between">
+                        <div>
+                          <h5 class="item-name">Men's Casual Shirt</h5>
+                          <p class="mb-3 text-muted text-uppercase small">
+                            Style: Casual
+                          </p>
+                          <p class="mb-2 text-muted text-uppercase small">
+                            Color: grey
+                          </p>
+                          <p class="mb-3 text-muted text-uppercase small">
+                            Size: M
+                          </p>
+                        </div>
+                        <div>
+                          <div class="mb-0 w-100">
+                            <button
+                              onclick="
+                                this.parentNode
+                                  .querySelector('input[type=number]')
+                                  .stepDown();
+                                updateTotal();
+                              "
+                              class="btn btn-sm btn-outline-primary"
+                            >
+                              <i class="fas fa-minus"></i>
+                            </button>
+                            <input
+                              class="quantity text-center item-quantity"
+                              min="0"
+                              max="10"
+                              name="quantity"
+                              value="1"
+                              type="number"
+                            />
+                            <button
+                              onclick="
+                                this.parentNode
+                                  .querySelector('input[type=number]')
+                                  .stepUp();
+                                updateTotal();
+                              "
+                              class="btn btn-sm btn-outline-primary"
+                            >
+                              <i class="fas fa-plus"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <div>
+                          <a
+                            onclick="removeItem('item-4')"
+                            type="button"
+                            class="card-link-secondary small text-uppercase mr-3"
+                          >
+                            <i class="fas fa-trash-alt mr-1"></i> Remove item
+                          </a>
+                        </div>
+                        <p class="mb-0">
+                          <span
+                            ><input
+                              type="hidden"
+                              class="orivalue"
+                              value="499"
+                            /><strong
+                              >$ <span class="value">499</span></strong
+                            ></span
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-4 rounded">
+            <!-- Card -->
+            <div class="mb-3">
+              <div class="pt-4">
+                <h5 class="mb-3" onload="orderSummaryList()">Order summary</h5>
+                <ul class="list-group list-group-flush">
+                  <!-- <li
+                    class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-2"
+                  >
+                    <span>Sherwani</span>
+                    <span>x1</span>
+                    <span>$2499.00</span>
+                  </li>
+                  <li
+                    class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-2"
+                  >
+                    <span>Partywear Women Shrug</span>
+                    <span>x1</span>
+                    <span>$399.00</span>
+                  </li>
+                  <li
+                    class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-2"
+                  >
+                    <span>Women Crop Top</span>
+                    <span>x2</span>
+                    <span>$798.00</span>
+                  </li>
+                  <li
+                    class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-2"
+                  >
+                    <span>Men's Casual Shirt</span>
+                    <span>x1</span>
+                    <span>$499.00</span>
+                  </li>
+                  <li
+                    class="list-group-item d-flex justify-content-between align-items-center border-top px-0 mb-3"
+                  > -->
+                                </ul>
+                <div>
+                  <strong>Total amount</strong>
+                  <strong>
+                    <p class="mb-0">(including VAT)</p>
+                  </strong>
+                </div>
+
+                <span
+                  ><strong>$<span id="total">0</span></strong></span
+                >
+
+                <a href="checkout.html" class="btn btn-primary btn-block"
+                  >Go to Checkout</a
+                >
+              </div>
+            </div>
+            <!-- Card -->
+          </div>
+          <!--Grid column-->
+        </div>
+      </div>
     </section>
 
     <!-- ==============cart ends here============== -->
 
     <!-- ==============footer starts here============== -->
-     <div id="footer-placeholder"></div>
+    <div id="footer-placeholder"></div>
     <!-- ==============footer ends here============== -->
-
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-        crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
