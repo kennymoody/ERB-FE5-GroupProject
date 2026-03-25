@@ -33,6 +33,8 @@ function setActiveLink() {
   // get current path
   let currentPath = window.location.pathname.split("/").pop();
 
+  currentPath = currentPath + ".html";
+
   if (currentPath === "") currentPath = "index.html";
 
   // find all nav links
