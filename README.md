@@ -1,8 +1,7 @@
 # ERB-FE5-GroupProject
 
 
-https://erbproject.pages.dev/
+https://erbproject.pages.dev/ (1,12,16,22,23)
 
-https://github.com/kennymoody/ERB-FE5-GroupProject
+https://github.com/kennymoody/ERB-FE5-GroupProject (1,12,16,22,23)
 
-22,1,23,12,16
